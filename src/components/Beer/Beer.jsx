@@ -11,7 +11,7 @@ function Beer(props) {
 			<p>ABV: {props.abv}% / IBU: {props.ibu}</p>
 			<p>Price: ${props.price}</p>
 			<p>Pints Left: {props.pintsLeft}</p>
-			<hr/>
+			<br/>
 		</div>
   );
 }
