@@ -4,7 +4,7 @@ import Beer from '../Beer/Beer';
 function BeerList(){
   return (
     <Beer
-      name='Tricerahops'
+      name='Tricerahopsss'
       brewery='Ninkasi Brewing Company, Eugene, OR'
       style='IPA - Double West Coast'
       abv={8}
