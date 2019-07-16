@@ -1,12 +1,17 @@
 import React from "react";
+import { Switch, Route } from 'react-router-dom';
 import Header from "../Header/Header";
-import BeerList from "../BeerList/BeerList"
+import BeerList from "../BeerList/BeerList";
+import NewBeerForm from "../NewBeerForm/NewBeerForm";
 
 function App() {
 	return (
 		<div>
 			<Header/>
-			<BeerList/>
+			<Switch>
+				<Route exact path='/' component={BeerList} />
+				<Route path='/addbeer' component={NewBeerForm} />
+			</Switch>
 		</div>
 	);
 }
