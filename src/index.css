@@ -1,0 +1,10 @@
+body {
+    font-family: 'Rubik', sans-serif;
+    background: url('https://rhinegeist.com/wp-content/uploads/2018/07/visit-hero.png');
+    background-blend-mode: multiply;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: #3D3A39;
+    color: white;
+  }
