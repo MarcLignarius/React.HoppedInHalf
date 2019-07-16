@@ -1,3 +1,13 @@
 .title {
     text-align: center;
 }
+
+.w3-btn {
+    margin-bottom: 10px;
+}
+
+.divider {
+    width: 5px;
+    height: auto;
+    display: inline-block;
+}
