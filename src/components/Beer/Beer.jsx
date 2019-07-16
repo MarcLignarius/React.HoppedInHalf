@@ -4,7 +4,6 @@ import PropTypes from "prop-types";
 function Beer(props) {
 	return (
 		<div>
-			<h1>Beer Menu</h1>
 			<p>Name: {props.name}</p>
 			<p>Brewery: {props.brewery}</p>
 			<p>Style: {props.style}</p>

@@ -61,6 +61,7 @@ var masterBeerList = [
 function BeerList(){
   return (
     <div>
+      <h1>Beer Menu</h1>
       {masterBeerList.map((beer, index) =>
         <Beer
           name={beer.name}
