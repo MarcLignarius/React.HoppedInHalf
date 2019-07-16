@@ -8,3 +8,7 @@ body {
     background-color: #3D3A39;
     color: white;
   }
+
+  .smallSpace {
+    margin-bottom: 5px;
+  }
