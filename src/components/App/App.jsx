@@ -10,7 +10,7 @@ function App() {
 			<Header/>
 			<Switch>
 				<Route exact path='/' component={BeerList} />
-				<Route path='/addbeer' component={NewBeerForm} />
+				<Route exact path='/addbeer' component={NewBeerForm} />
 			</Switch>
 		</div>
 	);
