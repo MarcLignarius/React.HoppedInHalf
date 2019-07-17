@@ -7,6 +7,7 @@ function NewBeerForm(){
   let _style = null;
   let _abv = null;
   let _ibu = null;
+  let _price = null;
   let _pintsLeft = null;
 
   function handleNewBeerFormSubmission(event) {
@@ -37,15 +38,24 @@ function NewBeerForm(){
         <br/>
         <input
           type='number'
+          step=".01"
           id='abv'
           placeholder='ABV'
           ref={(input) => {_abv = input;}}/>
         <br/>
         <input
           type='number'
+          step=".01"
           id='ibu'
           placeholder='IBU'
           ref={(input) => {_ibu = input;}}/>
+        <br/>
+        <input
+          type='number'
+          step=".01"
+          id='price'
+          placeholder='Price'
+          ref={(input) => {_price = input;}}/>
         <br/>
         <input
           type='number'
