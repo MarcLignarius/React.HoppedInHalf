@@ -2,6 +2,13 @@ import React from 'react';
 
 class Admin extends React.Component {
 
+  constructor(props) {
+    super(props);
+    this.state = {
+      adminPanelVisibleOnPage: false
+    };
+  }
+
   render(){
     return (
       <div>
