@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 
-function NewBeerForm(){
+function NewBeerForm(props){
   let _name = null;
   let _brewery = null;
   let _style = null;
@@ -13,6 +13,24 @@ function NewBeerForm(){
 
   function handleNewBeerFormSubmission(event) {
     event.preventDefault();
+    props.onNewBeerAddition(
+      {
+        name: _name.value,
+        brewery: _brewery.value,
+        style: _style.value,
+        abv: _abv.value,
+        ibu: _ibu.value,
+        price: _price.value,
+        pintsLeft: _pintsLeft.value
+      }
+    );
+    _name.value = '';
+    _brewery.value = '';
+    _style.value = '';
+    _abv.value = '';
+    _ibu.value = '';
+    _price.value = '';
+    _pintsLeft.value = ';';
   }
 
   return (
