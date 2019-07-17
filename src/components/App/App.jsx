@@ -79,6 +79,7 @@ class App extends React.Component {
         }
       ]
     };
+    this.handleAddingNewBeerToList = this.handleAddingNewBeerToList.bind(this);
   }
 
   handleAddingNewBeerToList(newBeer){
