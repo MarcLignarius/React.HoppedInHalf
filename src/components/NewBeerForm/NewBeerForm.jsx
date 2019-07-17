@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
+import { v4 } from 'uuid';
 
 function NewBeerForm(props){
   let _name = null;
@@ -21,7 +22,8 @@ function NewBeerForm(props){
         abv: _abv.value,
         ibu: _ibu.value,
         price: _price.value,
-        pintsLeft: _pintsLeft.value
+        pintsLeft: _pintsLeft.value,
+        id: v4()
       }
     );
     _name.value = '';

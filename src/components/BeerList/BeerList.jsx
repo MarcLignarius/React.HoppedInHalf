@@ -6,7 +6,7 @@ function BeerList(props){
   return (
     <div>
       <h1>Beer Menu</h1>
-      {props.beerList.map((beer, index) =>
+      {props.beerList.map((beer) =>
         <Beer
           label={beer.label}
           name={beer.name}
@@ -16,7 +16,7 @@ function BeerList(props){
           ibu={beer.ibu}
           price={beer.price}
           pintsLeft={beer.pintsLeft}
-          key={index}
+          key={beer.id}
         />
       )}
     </div>
