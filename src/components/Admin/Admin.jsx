@@ -9,10 +9,26 @@ class Admin extends React.Component {
     };
   }
 
+  handleClick(){
+    this.setState({adminPanelVisibleOnPage: true});
+  }
+
   render(){
     return (
       <div>
-        <p>This is the Admin component!</p>
+        <form>
+          <input
+            type='text'
+            id='username'
+            placeholder='Username'/>
+          <br/>
+          <input
+            type='password'
+            id='password'
+            placeholder='Password'/>
+          <div className={'smallSpace'}></div>
+          <button className={'w3-button w3-white w3-border'} onClick={this.handleClick}>Login</button>
+        </form>
       </div>
     );
   }
