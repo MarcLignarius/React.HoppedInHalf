@@ -5,15 +5,19 @@ import './Beer.css';
 function Beer(props) {
   return (
     <div className={'card'}>
-      <img src={props.label}></img>
-      <p>Name: {props.name}</p>
-      <p>Brewery: {props.brewery}</p>
-      <p>Style: {props.style}</p>
-      <p>ABV: {props.abv}% / IBU: {props.ibu}</p>
-      <p>Price: ${props.price}</p>
-      <p>Pints Left: {props.pintsLeft}</p>
-      <br/>
-    </div>
+      <div>
+        <img src={props.label}></img>
+      </div>
+      <div className={'body'}>
+        <p>Name: {props.name}</p>
+        <p>Brewery: {props.brewery}</p>
+        <p>Style: {props.style}</p>
+        <p>ABV: {props.abv}% / IBU: {props.ibu}</p>
+        <p>Price: ${props.price}</p>
+        <p>Pints Left: {props.pintsLeft}</p>
+        <br/>
+      </div>
+    </div>    
   );
 }
 
