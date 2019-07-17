@@ -9,7 +9,7 @@ img {
 .card {
   border: 1px solid white;
   margin: 10px;
-  padding-left: 5%;
+  margin-bottom: 1px;
   width: 100%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
