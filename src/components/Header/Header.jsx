@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 import { Link } from 'react-router-dom';
 import './Header.css';
 
@@ -9,7 +9,7 @@ function Header(){
       <hr/>
       <Link to="/"><button className={'w3-button w3-white w3-border'}>Home</button></Link>
       <div className={'divider'}></div>
-      <Link to="/addbeer"><button className={'w3-button w3-white w3-border'}>Add Beer</button></Link>
+      <Link to="/admin"><button className={'w3-button w3-white w3-border'}>Admin</button></Link>
       <hr/>
     </div>
   );
