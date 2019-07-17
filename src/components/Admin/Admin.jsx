@@ -7,6 +7,7 @@ class Admin extends React.Component {
     this.state = {
       adminPanelVisibleOnPage: false
     };
+    this.handleClick = this.handleClick.bind(this);
   }
 
   handleClick(){
