@@ -93,13 +93,13 @@ class App extends React.Component {
       <div>
         <Header/>
         <Switch>
-          <Route exact path='/' component={BeerList} />
-          <Route path='/newbeer' render={()=><AdminControl onNewBeerAddition={this.handleAddingNewTicketToList} />} />
+          <Route exact path='/' render={()=><BeerList beerList={this.state.masterBeerList} />} />
+          <Route path='/addbeer' render={()=><AdminControl onNewBeerAddition={this.handleAddingNewBeerToList} />} />
           <Route component={Error404} />
         </Switch>
       </div>
-    )
-  };
+    );
+  }
 }
 
 export default App;
