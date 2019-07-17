@@ -4,7 +4,7 @@ import './Beer.css';
 
 function Beer(props) {
   return (
-    <div>
+    <div className={'card'}>
       <img src={props.label}></img>
       <p>Name: {props.name}</p>
       <p>Brewery: {props.brewery}</p>

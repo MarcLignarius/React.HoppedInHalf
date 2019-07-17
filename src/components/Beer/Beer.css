@@ -1,7 +1,12 @@
 img {
   display: block;
-  max-width:195px;
+  max-width:300px;
   max-height:500px;
   width: auto;
   height: auto;
+}
+
+.card {
+  border: 1px solid white;
+  margin: 10px;
 }
