@@ -1,11 +1,18 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-function handleNewBeerFormSubmission(event) {
+function NewBeerForm(){
+  let _name = null;
+  let _brewery = null;
+  let _style = null;
+  let _abv = null;
+  let _ibu = null;
+  let _pintsLeft = null;
+
+  function handleNewBeerFormSubmission(event) {
     event.preventDefault();
   }
 
-function NewBeerForm(){
   return (
     <div>
       <h3>You are logged in.</h3>
