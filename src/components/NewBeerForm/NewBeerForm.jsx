@@ -1,6 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+function handleNewBeerFormSubmission(event) {
+    event.preventDefault();
+  }
+
 function NewBeerForm(){
   return (
     <div>
