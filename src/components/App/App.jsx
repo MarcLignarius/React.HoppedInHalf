@@ -4,12 +4,12 @@ import Header from '../Header/Header';
 import Error404 from '../Error404/Error404';
 import AdminControl from '../AdminControl/AdminControl';
 import BeerList from '../BeerList/BeerList';
-import oldrasputin from '../../assets/labels/oldrasputin.jpg';
-import papyrusiris from '../../assets/labels/papyrusiris.jpeg';
-import guavasocksandsandals from '../../assets/labels/guavasocksandsandals.png';
-import tricerahops from '../../assets/labels/tricerahops.jpg';
-import saisondelis from '../../assets/labels/saisondelis.jpeg';
-import denimvestpionage from '../../assets/labels/denimvestpionage.jpg';
+import blackbutteporter from '../../assets/labels/blackbutteporter.png';
+import hophengeipa from '../../assets/labels/hophengeipa.png';
+import inversionipa from '../../assets/labels/inversionipa.png';
+import mirrorpondpaleale from '../../assets/labels/mirrorpondpaleale.png';
+import obsidianstout from '../../assets/labels/obsidianstout.png';
+import pacificwonderlandlager from '../../assets/labels/pacificwonderlandlager.png';
 
 class App extends React.Component {
 
@@ -18,62 +18,62 @@ class App extends React.Component {
     this.state = {
       masterBeerList: [
         {
-          label: oldrasputin,
-          name: 'Old Rasputin (Nitro)',
-          brewery: 'North Coast Brewing Company, Fort Bragg, CA',
-          style: 'Stout - Russian Imperial',
-          abv: 9,
-          ibu: 75,
-          price: 8,
-          pintsLeft: 124
-        },
-        {
-          label: papyrusiris,
-          name: 'Papyrus Iris',
-          brewery: 'Ruse Brewing, Portland, OR',
-          style: 'IPA - New England',
-          abv: 6.5,
-          ibu: 37,
+          label: blackbutteporter,
+          name: 'Black Butte Porter',
+          brewery: 'Deschutes Brewery',
+          style: 'Porter',
+          abv: 5.2,
+          ibu: 30,
           price: 7,
           pintsLeft: 124
         },
         {
-          label: guavasocksandsandals,
-          name: 'Guava Socks & Sandals',
-          brewery: 'Stickmen Brewing Company, Lake Oswego, OR',
-          style: 'IPA - New England',
-          abv: 6.6,
-          ibu: 37,
+          label: hophengeipa,
+          name: 'Hop Henge IPA',
+          brewery: 'Deschutes Brewery',
+          style: 'IPA',
+          abv: 8.3,
+          ibu: 90,
           price: 7,
           pintsLeft: 124
         },
         {
-          label: tricerahops,
-          name: 'Tricerahops',
-          brewery: 'Ninkasi Brewing Company, Eugene, OR',
-          style: 'IPA - Double West Coast',
-          abv: 8,
-          ibu: 84,
+          label: inversionipa,
+          name: 'Inversion IPA',
+          brewery: 'Deschutes Brewery',
+          style: 'IPA',
+          abv: 6.3,
+          ibu: 65,
           price: 7,
           pintsLeft: 124
         },
         {
-          label: saisondelis,
-          name: 'Saison de Lis',
-          brewery: 'Perennial, St Louis, MO',
-          style: 'Farmhouse Ale - Saison',
+          label: mirrorpondpaleale,
+          name: 'Mirror Pond Pale Ale',
+          brewery: 'Deschutes Brewery',
+          style: 'Craft Pale Ale',
           abv: 5,
-          ibu: 20,
-          price: 8,
+          ibu: 40,
+          price: 7,
           pintsLeft: 124
         },
         {
-          label: denimvestpionage,
-          name: 'Denim Vest-pionage',
-          brewery: 'Baerlic, Portland, OR',
-          style: 'IPA - West Coast',
-          abv: 7.3,
-          ibu: 62,
+          label: obsidianstout,
+          name: 'Obsidian Stout',
+          brewery: 'Deschutes Brewery',
+          style: 'Stout',
+          abv: 6.4,
+          ibu: 55,
+          price: 7,
+          pintsLeft: 124
+        },
+        {
+          label: pacificwonderlandlager,
+          name: 'Pacific Wonderland Lager',
+          brewery: 'Deschutes Brewery',
+          style: 'Lager',
+          abv: 5.5,
+          ibu: 40,
           price: 7,
           pintsLeft: 124
         }
