@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import LoginForm from '../LoginForm/LoginForm';
 import NewBeerForm from '../NewBeerForm/NewBeerForm';
 
@@ -31,5 +32,9 @@ class AdminControl extends React.Component {
     );
   }
 }
+
+AdminControl.propTypes = {
+  onNewBeerAddition: PropTypes.func
+};
 
 export default AdminControl;
