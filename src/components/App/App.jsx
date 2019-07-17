@@ -2,9 +2,8 @@ import React from 'react';
 import { Switch, Route } from 'react-router-dom';
 import Header from '../Header/Header';
 import Error404 from '../Error404/Error404';
-import Admin from '../Admin/Admin';
+import AdminControl from '../AdminControl/AdminControl';
 import BeerList from '../BeerList/BeerList';
-import NewBeerForm from '../NewBeerForm/NewBeerForm';
 
 function App() {
   return (
@@ -12,7 +11,7 @@ function App() {
       <Header/>
       <Switch>
         <Route exact path='/' component={BeerList} />
-        <Route exact path='/admin' component={Admin} />
+        <Route exact path='/addbeer' component={AdminControl} />
         <Route component={Error404} />
       </Switch>
     </div>
