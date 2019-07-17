@@ -21,7 +21,6 @@ class AdminControl extends React.Component {
   render(){
     let currentlyVisibleContent = null;
     if (this.state.NewBeerFormVisibleOnPage){
-      currentlyVisibleContent = <NewBeerForm/>;
       currentlyVisibleContent = <NewBeerForm onNewBeerAddition={this.props.onNewBeerAddition}/>;
     } else {
       currentlyVisibleContent = <LoginForm onLoginConfirmation={this.handleLoginConfirmation}/>;
