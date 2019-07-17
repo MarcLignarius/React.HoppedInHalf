@@ -13,32 +13,38 @@ function NewBeerForm(){
         <input
           type='text'
           id='name'
-          placeholder='Name'/>
+          placeholder='Name'
+          ref={(input) => {_name = input;}}/>
         <br/>
         <input
           type='text'
           id='brewery'
-          placeholder='Brewery'/>
+          placeholder='Brewery'
+          ref={(input) => {_brewery = input;}}/>
         <br/>
         <input
           type='text'
           id='style'
-          placeholder='Style'/>
+          placeholder='Style'
+          ref={(input) => {_style = input;}}/>
         <br/>
         <input
           type='number'
           id='abv'
-          placeholder='ABV'/>
+          placeholder='ABV'
+          ref={(input) => {_abv = input;}}/>
         <br/>
         <input
           type='number'
           id='ibu'
-          placeholder='IBU'/>
+          placeholder='IBU'
+          ref={(input) => {_ibu = input;}}/>
         <br/>
         <input
           type='number'
           id='pintsLeft'
-          placeholder='Pints Left'/>
+          placeholder='Pints Left'
+          ref={(input) => {_pintsLeft = input;}}/>
         <div className={'smallSpace'}></div>
         <button className={'w3-button w3-white w3-border'} type='submit'>Add Beer</button>
         <div className={'divider'}></div>
