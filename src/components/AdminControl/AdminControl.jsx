@@ -9,12 +9,12 @@ class AdminControl extends React.Component {
     this.state = {
       NewBeerFormVisibleOnPage: false
     };
-    //   this.handleClick = this.handleClick.bind(this);
+      this.handleLoginConfirmation = this.handleLoginConfirmation.bind(this);
   }
-  //
-  // handleClick(){
-  //   this.setState({NewBeerFormVisibleOnPage: true});
-  // }
+
+  handleLoginConfirmation(){
+    this.setState({NewBeerFormVisibleOnPage: true});
+  }
 
   render(){
     let currentlyVisibleContent = null;
