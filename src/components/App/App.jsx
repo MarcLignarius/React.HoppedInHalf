@@ -81,6 +81,12 @@ class App extends React.Component {
     };
   }
 
+  handleAddingNewBeerToList(newBeer){
+    var newMasterBeerList = this.state.masterBeerList.slice();
+    newMasterBeerList.push(newBeer);
+    this.setState({masterBeerList: newMasterBeerList});
+  }
+
   render(){
     return (
       <div>
