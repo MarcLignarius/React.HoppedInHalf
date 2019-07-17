@@ -9,7 +9,7 @@ class AdminControl extends React.Component {
     this.state = {
       NewBeerFormVisibleOnPage: false
     };
-      this.handleLoginConfirmation = this.handleLoginConfirmation.bind(this);
+    this.handleLoginConfirmation = this.handleLoginConfirmation.bind(this);
   }
 
   handleLoginConfirmation(){
