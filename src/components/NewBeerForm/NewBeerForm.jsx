@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 
 function NewBeerForm(){
@@ -70,5 +71,9 @@ function NewBeerForm(){
     </div>
   );
 }
+
+NewBeerForm.propTypes = {
+  onNewBeerAddition: PropTypes.func
+};
 
 export default NewBeerForm;
