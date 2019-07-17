@@ -12,6 +12,7 @@ class Admin extends React.Component {
 
   handleClick(){
     this.setState({adminPanelVisibleOnPage: true});
+    console.log('adminPanelVisibleOnPage is currently set to:' + this.state.adminPanelVisibleOnPage);
   }
 
   render(){
@@ -28,7 +29,7 @@ class Admin extends React.Component {
             id='password'
             placeholder='Password'/>
           <div className={'smallSpace'}></div>
-          <button className={'w3-button w3-white w3-border'} onClick={this.handleClick}>Login</button>
+          <button onClick={this.handleClick} className={'w3-button w3-white w3-border'}>Login</button>
         </form>
       </div>
     );
