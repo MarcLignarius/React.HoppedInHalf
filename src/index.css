@@ -14,3 +14,7 @@ body {
   .smallSpace {
     margin-bottom: 5px;
   }
+
+  .w3-btn {
+      margin-bottom: 10px;
+  }
