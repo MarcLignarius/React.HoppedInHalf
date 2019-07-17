@@ -59,19 +59,22 @@ function NewBeerForm(props){
         <br/>
         <input
           type='number'
-          step=".1"
+          step='.1'
+          min='2.5'
           id='abv'
           placeholder='ABV'
           ref={(input) => {_abv = input;}}/>
         <br/>
         <input
           type='number'
+          min='30'
           id='ibu'
           placeholder='IBU'
           ref={(input) => {_ibu = input;}}/>
         <br/>
         <input
           type='number'
+          min='5'
           id='price'
           placeholder='Price'
           ref={(input) => {_price = input;}}/>
