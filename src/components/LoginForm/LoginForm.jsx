@@ -1,6 +1,7 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-function LoginForm(){
+function LoginForm(props){
   return (
     <div>
       <h3>You are not logged in. Please login:</h3>
@@ -15,10 +16,14 @@ function LoginForm(){
           id='password'
           placeholder='Password'/>
         <div className={'smallSpace'}></div>
-        <button onClick={this.handleClick} className={'w3-button w3-white w3-border'}>Login</button>
+        <button onClick={props.onLoginConfirmation} className={'w3-button w3-white w3-border'}>Login</button>
       </form>
     </div>
   );
 }
+
+LoginForm.propTypes = {
+  onLoginConfirmation: PropTypes.func
+};
 
 export default LoginForm;
