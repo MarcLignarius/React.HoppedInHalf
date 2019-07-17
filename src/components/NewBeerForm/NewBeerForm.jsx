@@ -5,7 +5,7 @@ function NewBeerForm(){
   return (
     <div>
       <h3>You are logged in.</h3>
-      <form>
+      <form onSubmit={handleNewBeerFormSubmission}>
         <input
           type='text'
           id='name'
