@@ -1,11 +1,13 @@
 import React from 'react';
 import Beer from '../Beer/Beer';
 import PropTypes from 'prop-types';
+import './BeerList.css'
 
 function BeerList(props){
   return (
     <div>
-      <h1>Beer Menu</h1>
+      <h1 className={'title'}>Beer Menu</h1>
+      <div className={'wrapper'}>
       {props.beerList.map((beer) =>
         <Beer
           label={beer.label}
@@ -19,6 +21,7 @@ function BeerList(props){
           key={beer.id}
         />
       )}
+      </div>
     </div>
   );
 }
